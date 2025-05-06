@@ -23,37 +23,19 @@ let month = today.getMonth();
 let year = today.getFullYear();
 
 const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
 ];
-
-// const eventsArr = [
-//   {
-//     day: 13,
-//     month: 11,
-//     year: 2022,
-//     events: [
-//       {
-//         title: "Event 1 lorem ipsun dolar sit genfa tersd dsad ",
-//         time: "10:00 AM",
-//       },
-//       {
-//         title: "Event 2",
-//         time: "11:00 AM",
-//       },
-//     ],
-//   },
-// ];
 
 const eventsArr = [];
 getEvents();
@@ -255,6 +237,9 @@ function updateEvents(date) {
             <div class="event-time">
               <span class="event-time">${event.time}</span>
             </div>
+                <div class="event-time">
+                  <span class="event-time">${event.place}</span>
+                </div>
         </div>`;
       });
     }
@@ -288,6 +273,12 @@ addEventTitle.addEventListener("input", (e) => {
   addEventTitle.value = addEventTitle.value.slice(0, 60);
 });
 
+//allow 50 chars in eventplace
+addEventTo.addEventListener("input", (e) => {
+  addEventTo.value = addEventTo.value.slice(0, 60);
+});
+
+
 //allow only time in eventtime from and to
 addEventFrom.addEventListener("input", (e) => {
   addEventFrom.value = addEventFrom.value.replace(/[^0-9:]/g, "");
@@ -299,15 +290,15 @@ addEventFrom.addEventListener("input", (e) => {
   }
 });
 
-addEventTo.addEventListener("input", (e) => {
-  addEventTo.value = addEventTo.value.replace(/[^0-9:]/g, "");
-  if (addEventTo.value.length === 2) {
-    addEventTo.value += ":";
-  }
-  if (addEventTo.value.length > 5) {
-    addEventTo.value = addEventTo.value.slice(0, 5);
-  }
-});
+//addEventTo.addEventListener("input", (e) => {
+  //addEventTo.value = addEventTo.value.replace(/[^0-9:]/g, "");
+  //if (addEventTo.value.length === 2) {
+    //addEventTo.value += ":";
+  //}
+  //if (addEventTo.value.length > 5) {
+   // addEventTo.value = addEventTo.value.slice(0, 5);
+ // }
+//});
 
 //function to add event to eventsArr
 addEventSubmit.addEventListener("click", () => {
@@ -321,21 +312,17 @@ addEventSubmit.addEventListener("click", () => {
 
   //check correct time format 24 hour
   const timeFromArr = eventTimeFrom.split(":");
-  const timeToArr = eventTimeTo.split(":");
   if (
     timeFromArr.length !== 2 ||
-    timeToArr.length !== 2 ||
     timeFromArr[0] > 23 ||
-    timeFromArr[1] > 59 ||
-    timeToArr[0] > 23 ||
-    timeToArr[1] > 59
+    timeFromArr[1] > 59 
   ) {
     alert("Invalid Time Format");
     return;
   }
 
   const timeFrom = convertTime(eventTimeFrom);
-  const timeTo = convertTime(eventTimeTo);
+  const timeTo = (eventTimeTo);
 
   //check if event is already added
   let eventExist = false;
@@ -358,7 +345,8 @@ addEventSubmit.addEventListener("click", () => {
   }
   const newEvent = {
     title: eventTitle,
-    time: timeFrom + " - " + timeTo,
+    time: timeFrom,
+    place: timeTo,
   };
   console.log(newEvent);
   console.log(activeDay);
