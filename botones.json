@@ -1,0 +1,70 @@
+{
+  "id": "btn-1",
+  "texto": "Primer Año",
+  "alumnos":"79 alumnos",
+  "color": "#CCD1D1",
+  "modalidad": "Sin Modalidad"
+}
+{
+  "id": "btn-2",
+  "texto": "Segundo Año",
+  "alumnos":"79 alumnos",
+  "color": "#99A3A4",
+  "modalidad": "Sin Modalidad"
+}
+{
+  "id": "btn-3",
+  "texto": "Tercer Año",
+  "alumnos":"79 alumnos",
+  "color": "#E59866",
+  "modalidad": "T.I.P.P"
+}
+{
+  "id": "btn-4",
+  "texto": "Cuarto Año",
+  "alumnos":"79 alumnos",
+  "color": "#E67E22",
+  "modalidad": "T.I.P.P"
+}
+{
+  "id": "btn-5",
+  "texto": "Quinto Año",
+  "alumnos":"79 alumnos",
+  "color": "#ad6b31",
+  "modalidad": "T.I.P.P"
+}
+{
+  "id": "btn-6",
+  "texto": "Sexto Año",
+  "alumnos":"79 alumnos",
+  "color": "#784212",
+  "modalidad": "T.I.P.P"
+}
+{
+  "id": "btn-7",
+  "texto": "Tercer Año",
+  "alumnos":"79 alumnos",
+  "color": "#85C1E9",
+  "modalidad": "M.M.O"
+}
+{
+  "id": "btn-8",
+  "texto": "Cuarto Año",
+  "alumnos":"79 alumnos",
+  "color": "#3498DB",
+  "modalidad": "M.M.O"
+}
+{
+  "id": "btn-9",
+  "texto": "Quinto año",
+  "alumnos":"79 alumnos",
+  "color": "#2874A6",
+  "modalidad": "M.M.O"
+}
+{
+  "id": "btn-10",
+  "texto": "Sexto año",
+  "alumnos":"79 alumnos",
+  "color": "#204a64",
+  "modalidad": "M.M.O"
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>EducaSync - Gregoria Matorras N°644</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">december 2015</div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>Dom</div>
+            <div>Lun</div>
+            <div>Mar</div>
+            <div>Miér</div>
+            <div>Jue</div>
+            <div>Vie</div>
+            <div>Sáb</div>
+          </div>
+          <div class="days"></div>
+          <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="mes/año" class="date-input" />
+              <button class="goto-btn">Buscar</button>
+            </div>
+            <button class="today-btn">Hoy</button>
+          </div>
+          <div class="name_admin">Melani Lechman</div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="today-date">
+          <div class="event-day">    </div>
+            <div class="marca">EducaSync</h1></div>
+            
+                
+    <!-- Niveles y Modalidades-->
+    <div class="boton-grid">
+      <div class="boton-contenedor"><div class="texto-hover">1°</div><button class="boton btn-1">1°</button></div>
+      <div class="boton-contenedor"><div class="texto-hover">2°</div><button class="boton btn-2">2°</button></div>
+      <div class="boton-contenedor"><div class="texto-hover">T.I.P.P</div><button class="boton btn-7">3°</button></div>
+      <div class="boton-contenedor"><div class="texto-hover">M.M.O</div><button class="boton btn-3">3°</button></div>
+      <div class="boton-contenedor"><div class="texto-hover">T.I.P.P</div><button class="boton btn-8">4°</button></div>
+      <div class="boton-contenedor"><div class="texto-hover">M.M.O</div><button class="boton btn-4">4°</button></div>
+      <div class="boton-contenedor"><div class="texto-hover">T.I.P.P</div><button class="boton btn-9">5°</button></div>
+      <div class="boton-contenedor"><div class="texto-hover">M.M.O</div><button class="boton btn-5">5°</button></div>
+      <div class="boton-contenedor"><div class="texto-hover">T.I.P.P</div><button class="boton btn-10">6°</button></div>
+      <div class="boton-contenedor"><div class="texto-hover">M.M.O</div><button class="boton btn-6">6°</button></div>
+    </div>
+
+          <div class="event-date">               </div>
+        </div>
+        <div class="events"></div>
+        <div class="add-event-wrapper">
+          <div class="add-event-header">
+            <div class="title">Agregar Evento</div>
+            <i class="fas fa-times close"></i>
+          </div>
+          <div class="add-event-body">
+            <div class="add-event-input">
+              <input type="text" placeholder="Nombre del Evento" class="event-name" />
+            </div>
+            <div class="add-event-input">
+              <input type="text" placeholder="Comienzo del Evento" class="event-time-from" />
+            </div>
+            <div class="add-event-input">
+              <input  type="text" placeholder="Lugar" class="event-time-to">
+            </div>
+          </div>
+          <div class="add-event-footer">
+            <button class="add-event-btn">Agregar</button>
+          </div>
+        </div>
+      </div>
+      <button class="add-event">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
