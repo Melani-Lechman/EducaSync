@@ -421,7 +421,7 @@ html, body {
 .events .event .event-time {
   font-size: 0.8rem;
   font-weight: 400;
-  color: #878895;
+  color: #d7cccc;
   margin-left: 10px;
   pointer-events: none;
 }
@@ -430,7 +430,7 @@ html, body {
 }
 /* add tick in event after */
 .events .event::after {
-  content: "✓";
+  content: "➲";
   position: absolute;
   top: 50%;
   right: 0;
