@@ -440,7 +440,7 @@ html, body {
   align-items: center;
   justify-content: center;
   opacity: 0.3;
-  color: var(--primary-clr);
+  color: var(white);
   transform: translateY(-50%);
 }
 .events .event:hover::after {
