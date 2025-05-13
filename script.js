@@ -246,7 +246,7 @@ function updateEvents(date) {
   });
   if (events === "") {
     events = `<div class="no-event">
-            <h3>No Events</h3>
+            <h3>No Hay Eventos Disponibles</h3>
         </div>`;
   }
   eventsContainer.innerHTML = events;
