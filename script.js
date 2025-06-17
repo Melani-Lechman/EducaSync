@@ -442,3 +442,24 @@ function convertTime(time) {
   time = timeHour + ":" + timeMin + " " + timeFormat;
   return time;
 }
+
+/*Botones sin seleccionar*/
+
+  addEventSubmit.addEventListener("click",() => {
+    const Btn1 = addEventBtn1.value;
+    const Btn2 = addEventBtn2.value;
+    const Btn3 = addEventBtn3.value;
+    const Btn4 = addEventBtn4.value;
+    const Btn5 = addEventBtn5.value;
+    const Btn6 = addEventBtn6.value;
+    const Btn7 = addEventBtn7.value;
+    const Btn8 = addEventBtn8.value;
+    const Btn9 = addEventBtn9.value;
+    const Btn10 = addEventBtn10.value;
+
+     if (Btn1 === "" & Btn2 === "" & Btn3 === "" & Btn4 === "" & Btn5 === "" & Btn6 === "" & Btn7 === "" & Btn8 === "" & Btn9 === "" & Btn10 === "" ) {
+    alert("Elija un Botón para Asignar un Año y Modalidad al Evento");
+    return;
+  }
+  }
+  )
